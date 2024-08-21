@@ -1,3 +1,5 @@
+# SQL 🠊 Online Practice Website 🠊 Hospital Problem Set
+
 ## Q1. Show first name, last name, and gender of patients whose gender is 'M'
 
 <details>
@@ -6,7 +8,7 @@
 ```sql
 SELECT first_name, last_name, gender 
 FROM patients 
-where gender = 'M';
+WHERE gender = 'M';
 ```
 
 </details>
@@ -43,7 +45,7 @@ WHERE first_name LIKE 'C%';
 
 ---
 
-## Q4. Show first name and last name of patients that weight within the range of 100 to 120 (inclusive)
+## Q4. Show first name and last name of patients that have weight within the range of 100 to 120 (inclusive)
 
 <details>
 <summary> SQL Answer for Q4 </summary>
