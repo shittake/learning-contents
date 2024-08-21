@@ -202,10 +202,10 @@ AND city = 'Hamilton';
 
 </details>
 
-## Q16. Write a query to find list of patients first_name, last_name, and allergies where allergies are not null and are from the city of 'Hamilton'
+## Q17. Write a query to find list of patients first_name, last_name, and allergies where allergies are not null and are from the city of 'Hamilton'
 
 <details>
-<summary> SQL Answer for Q16</summary>
+<summary> SQL Answer for Q17</summary>
 
 ```sql
 SELECT first_name, last_name, allergies
