@@ -1,5 +1,13 @@
 ---
+layout: default
 ---
+
+<style>
+.github-corner {
+    display: none;
+}
+</style>
+
 ## Q1. Show first name, last name, and gender of patients whose gender is 'M'
 
 <details>
