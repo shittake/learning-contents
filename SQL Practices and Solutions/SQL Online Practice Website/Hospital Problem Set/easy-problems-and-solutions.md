@@ -1,4 +1,4 @@
-# SQL 🠊 Online Practice Website 🠊 Hospital Problem Set
+# SQL 🠊 Online Practice Website 🠊 Hospital Problem Set (EASY)
 
 ## Q1. Show first name, last name, and gender of patients whose gender is 'M'
 
