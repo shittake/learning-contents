@@ -1,4 +1,3 @@
-import CodeEditor from '../../../../CodeEditor';
 # SQL 🠊 Online Practice Website 🠊 Hospital Problem Set (MEDIUM)
 
 ## Q1. Show unique birth years from patients and order them by ascending.
@@ -165,7 +164,7 @@ FROM doctors;
 ```sql
 SELECT allergies, COUNT(*) AS allergy_count
 FROM patients
-group by allergies
+GROUP BY allergies
 HAVING allergies IS NOT NULL
 ORDER BY allergy_count DESC;
 ```
@@ -330,8 +329,8 @@ GROUP BY doctor_id;
 SELECT province_name, COUNT(*) AS province_population
 FROM patients JOIN province_names
 ON patients.province_id = province_names.province_id
-group by province_name 
-order by province_population DESC;
+GROUP BY province_name 
+ORDER BY province_population DESC;
 ```
 
 </details>
@@ -360,11 +359,49 @@ JOIN doctors ON doctors.doctor_id = admissions.attending_doctor_id;
 <summary> SQL Answer for Q23 </summary>
 
 ```sql
-
+SELECT first_name, last_name, COUNT(*)
+FROM patients
+GROUP BY first_name, last_name
+HAVING COUNT(*) > 1;
 ```
 
 </details>
 
 ---
 
-<CodeEditor />
+## Q24. Display patient's full name, height in the units feet rounded to 1 decimal, weight in the unit pounds rounded to 0 decimals, birth_date, gender non abbreviated. Convert CM to feet by dividing by 30.48. Convert KG to pounds by multiplying by 2.205.
+
+<details>
+<summary> SQL Answer for Q24 </summary>
+
+```sql
+SELECT CONCAT(first_name, " ", last_name) AS full_name,
+ROUND(height/30.48, 1) AS height_in_feet,
+ROUND(weight * 2.205) AS weight_in_pounds,
+birth_date,
+CASE
+	WHEN gender = 'M' THEN 'MALE'
+    ELSE 'FEMALE'
+END AS gender_full
+FROM patients;
+```
+
+</details>
+
+---
+
+## Q25. Show patient_id, first_name, last_name from patients whose does not have any records in the admissions table. (Their patient_id does not exist in any admissions.patient_id rows.)
+
+<details>
+<summary> SQL Answer for Q25 </summary>
+
+```sql
+SELECT patients.patient_id, first_name, last_name
+FROM patients
+WHERE patients.patient_id NOT IN (SELECT admissions.patient_id FROM admissions);
+```
+
+</details>
+
+---
+
