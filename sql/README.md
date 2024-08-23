@@ -10,7 +10,7 @@ This contains my solutions to problems found in [Online SQL practice website - s
 |[Easy (hospital.db)](sql-practice.com/hospital-set/easy-problems-and-solutions.html)|[17](sql-practice.com/hospital-set/easy-problems-and-solutions.html)|
 |[Easy (northwind.db)](sql-practice.com/northwind-set/easy-problems-and-solutions.html)|[9](sql-practice.com/northwind-set/easy-problems-and-solutions.html)|
 |[Medium (hospital.db)](sql-practice.com/hospital-set/medium-problems-and-solutions.html)|[25](sql-practice.com/hospital-set/medium-problems-and-solutions.html)|
-|[Medium (northwind.db)](sql-practice.com/northwind-set/medium-problems-and-solutions.html)|[0](sql-practice.com/F/medium-problems-and-solutions.html)|
+|[Medium (northwind.db)](sql-practice.com/northwind-set/medium-problems-and-solutions.html)|[3](sql-practice.com/northwind-set/medium-problems-and-solutions.html)|
 |[Hard (hospital.db)](sql-practice.com/hospital-set/hard-problems-and-solutions.html)|[0](sql-practice.com/hospital-set/hard-problems-and-solutions.html)|
 |[Hard (northwind.db)](sql-practice.com/northwind-set/hard-problems-and-solutions.html)|[0](sql-practice.com/northwind-set/hard-problems-and-solutions.html)|
 
