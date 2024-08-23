@@ -1,3 +1,4 @@
+import CodeEditor from '../../../../CodeEditor';
 # SQL 🠊 Online Practice Website 🠊 Hospital Problem Set (MEDIUM)
 
 ## Q1. Show unique birth years from patients and order them by ascending.
@@ -356,15 +357,14 @@ JOIN doctors ON doctors.doctor_id = admissions.attending_doctor_id;
 ## Q23. display the first name, last name and number of duplicate patients based on their first name and last name. (Ex: A patient with an identical name can be considered a duplicate.)
 
 <details>
-<summary> SQL Answer for Q22 </summary>
+<summary> SQL Answer for Q23 </summary>
 
 ```sql
-SELECT CONCAT(patients.first_name, " ", patients.last_name), admissions.diagnosis, CONCAT(doctors.first_name, " ", doctors.last_name)
-FROM admissions
-JOIN patients ON patients.patient_id = admissions.patient_id
-JOIN doctors ON doctors.doctor_id = admissions.attending_doctor_id;
+
 ```
 
 </details>
 
 ---
+
+<CodeEditor />
